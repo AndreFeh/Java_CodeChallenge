@@ -3,27 +3,36 @@ package calculo_velocidade;
 import java.util.Scanner;
 
 public class Exemplo {
-    // TODO: Preencha a função para verificar queda de conexão
+    // Metodo calculo velocidade media de conexão
     public static String verificarQuedaConexao(String[] velocidades) {
-        return...;
+        int soma = 0;
+        int totalVelocidades = velocidades.length; /*Buscando a qtd de valores*/
+
+        // Convertendo as strings para inteiros e somando
+        for (String velocidade : velocidades) {
+            soma += Integer.parseInt(velocidade.trim()); /*entendi*/
+            /*Soma a velocidade da vez junto as demais velocidades incluidas no array*/
+            /*velocidade.trim, velocidade é convertida de String para Integer*/
+            /*.trim remove os epacos em branco do comeco e fim da String*/
+        }
+        int media = soma / totalVelocidades;
+
+        // Retornando o resultado formatado
+        return media + " Mbps";
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitando ao usuário a lista de velocidades de conexão registradas a cada hora
+        //System.out.println("Digite as velocidades de conexão (em Mbps) separadas por vírgula:");
         String input = scanner.nextLine();
 
-        // Convertendo a entrada em uma lista de strings
+        // Pega todos os valores, e identifica a virgula e automaticamente separa-os
         String[] velocidades = input.split(",");
 
-        // Verificando se houve queda de conexão
         String resultado = verificarQuedaConexao(velocidades);
-
-        // Exibindo o resultado da verificação
         System.out.println(resultado);
 
         scanner.close();
     }
 }
-

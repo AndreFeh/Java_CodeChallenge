@@ -10,8 +10,8 @@ A saída do programa deve ser a velocidade média de conexão em Mbps. O sistema
 Exemplos
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-Entrada	Saída
-130,134,132,130,130,136	132 Mbps
-120,130,125,125,120,130	125 Mbps
-110,100, 120,110, 115,105	110 Mbps
+Entrada
+130,134,132,130,130,136		    Saída 132 Mbps
+120,130,125,125,120,130	        Saída 125 Mbps
+110,100, 120,110, 115,105		Saída 110 Mbps
 
