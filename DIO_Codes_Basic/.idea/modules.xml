@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DIO_Codes_Basic.iml" filepath="$PROJECT_DIR$/.idea/DIO_Codes_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controle-candidato/controle-candidato.iml" filepath="$PROJECT_DIR$/controle-candidato/controle-candidato.iml" />
+      <module fileurl="file://$PROJECT_DIR$/planos-operadora/planos-operadora.iml" filepath="$PROJECT_DIR$/planos-operadora/planos-operadora.iml" />
+    </modules>
+  </component>
+</project>

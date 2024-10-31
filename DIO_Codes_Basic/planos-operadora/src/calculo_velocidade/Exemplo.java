@@ -4,6 +4,21 @@ import java.util.Scanner;
 
 public class Exemplo {
     // Metodo calculo velocidade media de conexão
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //System.out.println("Digite as velocidades de conexão (em Mbps) separadas por vírgula:");
+        String input = scanner.nextLine();
+
+        // Pega todos os valores, e identifica a virgula e automaticamente separa-os
+        String[] velocidades = input.split(",");
+
+        String resultado = verificarQuedaConexao(velocidades);
+        System.out.println(resultado);
+
+        scanner.close();
+    }
+
     public static String verificarQuedaConexao(String[] velocidades) {
         int soma = 0;
         int totalVelocidades = velocidades.length; /*Buscando a qtd de valores*/
@@ -19,20 +34,5 @@ public class Exemplo {
 
         // Retornando o resultado formatado
         return media + " Mbps";
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        //System.out.println("Digite as velocidades de conexão (em Mbps) separadas por vírgula:");
-        String input = scanner.nextLine();
-
-        // Pega todos os valores, e identifica a virgula e automaticamente separa-os
-        String[] velocidades = input.split(",");
-
-        String resultado = verificarQuedaConexao(velocidades);
-        System.out.println(resultado);
-
-        scanner.close();
     }
 }
