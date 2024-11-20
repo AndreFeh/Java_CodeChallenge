@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.one.innovation.digital.PessoaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-31T20:59:41" hostname="ANDREFEHSANTOS" time="0.038">
+  <properties/>
+  <testcase name="validarCalcIdade()" classname="com.one.innovation.digital.PessoaTest" time="0.038"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
